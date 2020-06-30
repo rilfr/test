@@ -6,6 +6,6 @@
     <title>Test</title>
 </head>
 <body>
-    <h1>TEST</h1>
+    <h1>TEST <?php echo $angka ?></h1>
 </body>
 </html>

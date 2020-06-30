@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function (){
-    return view('test');
+Route::get('/test/{angka}', function ($angka){
+    return view('test', ["angka" => $angka]);
 });
+
+Route::get('/form', 'RegisterController@form');
+
+Route::get('/sapa', 'RegisterController@sapa');
+
+Route::post('/sapa', 'RegisterController@sapa_post');
